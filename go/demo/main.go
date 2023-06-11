@@ -1,52 +1,31 @@
 package main
 
+// #include <stdio.h>
+// #include <stdlib.h>
+//
+// char *myprint(char* s) {
+//   return s;
+// }
+import "C"
+
 import (
 	"fmt"
-	"reflect"
-	"time"
+	"unsafe"
 )
 
-type clientInterface interface {
-	LearnGo()
-	LearnC()
-}
+func test(s string) string {
+	cs := C.CString(s)
+	defer C.free(unsafe.Pointer(cs))
+	ss := C.myprint(cs)
 
-type client1 struct{}
-
-func (c *client1) LearnGo() {}
-func (c *client1) LearnC()  {}
-
-type client2 struct{}
-
-func (c *client2) LearnGo() {}
-func (c *client2) LearnC()  {}
-
-type S[T clientInterface] struct {
-	value T
-}
-
-// 测试函数
-func (s S[T]) test(v T) {
-	fmt.Println("==========", reflect.TypeOf(s.value), reflect.TypeOf(v))
-}
-
-func NewS[T clientInterface](client T) S[T] {
-	return S[T]{
-		value: client,
-	}
+	str := C.GoString(ss)
+	return str
 }
 
 func main() {
-	one := client1{}
-	two := client2{}
-
-	s1 := NewS[*client1](&one)
-	s1.test(&one)
-
-	s2 := NewS[*client2](&two)
-	s2.test(&two)
-
-	timer := time.NewTimer(time.Second * 10)
-	timer.Reset(time.Second * 1)
-	<-timer.C
+	str1 := test("s1")
+	fmt.Println(str1)
+	str2 := test("s2")
+	fmt.Println("--", str1)
+	fmt.Println(str2)
 }
