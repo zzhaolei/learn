@@ -1,31 +1,27 @@
 package main
 
-// #include <stdio.h>
-// #include <stdlib.h>
-//
-// char *myprint(char* s) {
-//   return s;
-// }
-import "C"
-
 import (
 	"fmt"
-	"unsafe"
+	"runtime"
+	"sync"
 )
 
-func test(s string) string {
-	cs := C.CString(s)
-	defer C.free(unsafe.Pointer(cs))
-	ss := C.myprint(cs)
-
-	str := C.GoString(ss)
-	return str
-}
-
 func main() {
-	str1 := test("s1")
-	fmt.Println(str1)
-	str2 := test("s2")
-	fmt.Println("--", str1)
-	fmt.Println(str2)
+	runtime.GOMAXPROCS(1)
+	var wg sync.WaitGroup
+	wg.Add(20)
+	for i := 0; i < 10; i++ {
+		go func() {
+			fmt.Println("i:", i)
+			wg.Done()
+		}()
+	}
+
+	for i := 0; i < 10; i++ {
+		go func(i int) {
+			fmt.Println(i)
+			wg.Done()
+		}(i)
+	}
+	wg.Wait()
 }
