@@ -1,0 +1,60 @@
+### 生图
+POST http://localhost:8080/tasks
+Content-Type: application/json
+
+{
+    "hash": "abc",
+    "tasks": [
+        {
+            "task_type": "TXT2IMG",
+            "start_time": 1688609266139,
+            "callback_url": "",
+            "body": {
+                "eta": 1,
+                "seed": -1,
+                "steps": 20,
+                "width": 512,
+                "height": 768,
+                "n_iter": 1,
+                "prompt": "cat woman",
+                "s_tmax": 1,
+                "s_tmin": 0,
+                "styles": [],
+                "tiling": false,
+                "s_churn": 0,
+                "s_noise": 1,
+                "subseed": -1,
+                "hr_scale": 2,
+                "cfg_scale": 7,
+                "enable_hr": true,
+                "batch_size": 1,
+                "hr_resize_x": 1024,
+                "hr_resize_y": 1536,
+                "hr_upscaler": "R-ESRGAN 4x+ Anime6B",
+                "save_images": false,
+                "script_args": [],
+                "script_name": "test",
+                "send_images": true,
+                "sampler_name": "Euler a",
+                "restore_faces": false,
+                "sampler_index": "Euler a",
+                "negative_prompt": "EasyNegative, worst quality, low quality, normal quality",
+                "alwayson_scripts": {},
+                "do_not_save_grid": false,
+                "firstphase_width": 0,
+                "subseed_strength": 0,
+                "firstphase_height": 0,
+                "override_settings": {
+                    "t": 1
+                },
+                "denoising_strength": "0.3",
+                "seed_resize_from_h": -1,
+                "seed_resize_from_w": -1,
+                "do_not_save_samples": false,
+                "hr_second_pass_steps": 15,
+                "override_settings_restore_afterwards": true,
+                "sub_task_id": 1337
+            }
+        }
+    ]
+}
