@@ -1,0 +1,15 @@
+### 获取单个文件的 image size
+GET http://localhost:8080/_size///Downloads/test.png?test=1
+
+
+### 批量获取文件的 image size
+POST http://localhost:8080/_size/images
+Content-Type: application/json
+
+{
+    "urls": [
+        "http://test.com/////Downloads/test.png?test=1",
+        "http://test.com/Downloads/test.png?test=1",
+        "http://test.com/////////////Downloads/test.png?test=1"
+    ]
+}
