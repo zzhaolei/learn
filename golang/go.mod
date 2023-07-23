@@ -9,7 +9,6 @@ require (
 	github.com/rs/zerolog v1.29.1
 	github.com/segmentio/kafka-go v0.4.42
 	github.com/spf13/viper v1.16.0
-	go.uber.org/automaxprocs v1.5.3
 	google.golang.org/grpc v1.56.2
 	google.golang.org/protobuf v1.31.0
 	gorm.io/gorm v1.25.2
