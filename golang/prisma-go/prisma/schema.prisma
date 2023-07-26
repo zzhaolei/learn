@@ -1,0 +1,15 @@
+datasource db {
+    provider = "sqlite"
+    url      = "file:test.sqlite"
+}
+
+generator client {
+    provider = "go run github.com/steebchen/prisma-client-go"
+}
+
+model Model {
+    id          Int      @id @default(autoincrement())
+    value       String
+    create_time DateTime @default(now())
+    update_time DateTime @updatedAt
+}
