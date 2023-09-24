@@ -7,7 +7,7 @@ require (
 	github.com/gin-gonic/gin v1.9.1
 	github.com/google/wire v0.5.0
 	github.com/hibiken/asynq v0.24.1
-	github.com/iancoleman/strcase v0.0.0-20190422225806-e506e3ef7365
+	github.com/iancoleman/strcase v0.3.0
 	github.com/joho/godotenv v1.5.1
 	github.com/pkg/errors v0.9.1
 	github.com/rabbitmq/amqp091-go v1.8.1
@@ -16,7 +16,7 @@ require (
 	github.com/shopspring/decimal v1.3.1
 	github.com/spf13/viper v1.16.0
 	github.com/steebchen/prisma-client-go v0.24.0
-	github.com/takuoki/gocase v1.0.0
+	github.com/takuoki/gocase v1.1.1
 	go.uber.org/mock v0.3.0
 	golang.org/x/text v0.13.0
 	google.golang.org/grpc v1.58.2
