@@ -17,6 +17,7 @@ require (
 	github.com/spf13/viper v1.16.0
 	github.com/steebchen/prisma-client-go v0.24.0
 	github.com/takuoki/gocase v1.0.0
+	go.uber.org/fx v1.20.1
 	go.uber.org/mock v0.3.0
 	golang.org/x/text v0.13.0
 	google.golang.org/grpc v1.58.2
@@ -85,6 +86,10 @@ require (
 	github.com/twitchyliquid64/golang-asm v0.15.1 // indirect
 	github.com/ugorji/go/codec v1.2.11 // indirect
 	github.com/yuin/goldmark v1.5.6 // indirect
+	go.uber.org/atomic v1.9.0 // indirect
+	go.uber.org/dig v1.17.0 // indirect
+	go.uber.org/multierr v1.8.0 // indirect
+	go.uber.org/zap v1.23.0 // indirect
 	golang.org/x/arch v0.5.0 // indirect
 	golang.org/x/crypto v0.13.0 // indirect
 	golang.org/x/image v0.12.0 // indirect
