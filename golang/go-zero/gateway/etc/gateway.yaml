@@ -1,0 +1,14 @@
+Name: gateway.rpc
+ListenOn: 0.0.0.0:8080
+
+Gateway:
+  Name: gateway
+  Host: localhost
+  Port: 8081
+  Upstreams:
+    - Name: rpc-server
+      Grpc:
+        Endpoints:
+          - localhost:8080
+      ProtoSets:
+        - api/http.pb

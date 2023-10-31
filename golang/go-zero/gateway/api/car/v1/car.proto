@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package car;
+option go_package="./api/car/v1";
+
+import "google/api/annotations.proto";
+
+message Request {
+  string ping = 1;
+}
+
+message Response {
+  string pong = 1;
+}
+
+service Car {
+  rpc Ping(Request) returns(Response){
+    option (google.api.http) = {
+      get: "/v1/car/ping"
+    };
+  };
+}
