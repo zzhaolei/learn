@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"golang/asynq/task"
+	"asynq-demo/task"
 
 	"github.com/hibiken/asynq"
 )

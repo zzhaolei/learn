@@ -4,7 +4,7 @@
 package main
 
 import (
-	"golang/wire/internal/service"
+	"wire-demo/internal/service"
 
 	"github.com/google/wire"
 )

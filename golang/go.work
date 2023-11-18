@@ -1,0 +1,23 @@
+go 1.21.4
+
+use (
+	./interview
+	./asynq
+    ./coroutine
+	./demo
+    ./expired_lock
+    ./fx
+	./go-zero
+    ./grpc
+    ./gui
+	./hash-big-file
+    ./image-info
+    ./local-ip
+    ./mock
+    ./orm
+    ./pipeline-manager
+    ./prisma-go
+    ./rabbitmq
+    ./read-big-file-end-100
+    ./wire
+)

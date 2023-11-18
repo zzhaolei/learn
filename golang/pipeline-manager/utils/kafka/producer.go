@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"golang/pipeline-manager/config"
+	"pipeline-manager/config"
 
 	kafkaGo "github.com/segmentio/kafka-go"
 )

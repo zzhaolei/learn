@@ -6,7 +6,7 @@ package user
 import (
 	"context"
 
-	"golang/go-zero/gateway/api/user/v1"
+	"gozero/gateway/api/user/v1"
 
 	"github.com/zeromicro/go-zero/zrpc"
 	"google.golang.org/grpc"

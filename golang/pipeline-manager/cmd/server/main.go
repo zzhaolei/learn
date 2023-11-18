@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"golang/pipeline-manager/services/http/model"
-	"golang/pipeline-manager/utils/kafka"
+	"pipeline-manager/services/http/model"
+	"pipeline-manager/utils/kafka"
 
 	"github.com/gin-gonic/gin"
 	"github.com/rs/zerolog/log"

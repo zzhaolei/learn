@@ -1,9 +1,10 @@
 package initialize
 
 import (
+	carServer "gozero/car/api/car/v1"
+	"gozero/gateway/internal/svc"
+
 	"github.com/zeromicro/go-zero/zrpc"
-	carServer "golang/go-zero/car/api/car/v1"
-	"golang/go-zero/gateway/internal/svc"
 )
 
 func RegisterService(svcCtx *svc.ServiceContext) {

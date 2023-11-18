@@ -5,8 +5,8 @@ import (
 	"encoding/json"
 	"time"
 
-	"golang/pipeline-manager/config"
-	"golang/pipeline-manager/services/http/model"
+	"pipeline-manager/config"
+	"pipeline-manager/services/http/model"
 
 	"github.com/rs/zerolog/log"
 	kafkaGo "github.com/segmentio/kafka-go"

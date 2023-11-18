@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 
-	"golang/pipeline-manager/utils/kafka"
+	"pipeline-manager/utils/kafka"
 )
 
 func main() {

@@ -3,8 +3,8 @@ package userlogic
 import (
 	"context"
 
-	"golang/go-zero/gateway/api/user/v1"
-	"golang/go-zero/gateway/internal/svc"
+	v1 "gozero/gateway/api/user/v1"
+	"gozero/gateway/internal/svc"
 
 	"github.com/zeromicro/go-zero/core/logx"
 )

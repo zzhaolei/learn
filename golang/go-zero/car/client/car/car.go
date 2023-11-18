@@ -6,7 +6,7 @@ package car
 import (
 	"context"
 
-	"golang/go-zero/car/api/car/v1"
+	"gozero/car/api/car/v1"
 
 	"github.com/zeromicro/go-zero/zrpc"
 	"google.golang.org/grpc"

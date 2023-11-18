@@ -4,7 +4,7 @@ import (
 	"context"
 	"log"
 
-	"golang/prisma-go/prisma/db"
+	"prisma-go-demo/prisma/db"
 )
 
 func main() {

@@ -1,9 +1,10 @@
 package config
 
 import (
+	"gozero/car/client/car"
+
 	"github.com/zeromicro/go-zero/gateway"
 	"github.com/zeromicro/go-zero/zrpc"
-	"golang/go-zero/car/client/car"
 )
 
 type Config struct {

@@ -6,9 +6,9 @@ package server
 import (
 	"context"
 
-	"golang/go-zero/gateway/api/user/v1"
-	"golang/go-zero/gateway/internal/logic/user"
-	"golang/go-zero/gateway/internal/svc"
+	"gozero/gateway/api/user/v1"
+	"gozero/gateway/internal/logic/user"
+	"gozero/gateway/internal/svc"
 )
 
 type UserServer struct {

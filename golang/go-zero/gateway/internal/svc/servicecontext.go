@@ -1,6 +1,6 @@
 package svc
 
-import "golang/go-zero/gateway/internal/config"
+import "gozero/gateway/internal/config"
 
 type ServiceContext struct {
 	Config config.Config

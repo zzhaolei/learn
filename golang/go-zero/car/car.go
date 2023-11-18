@@ -4,10 +4,11 @@ import (
 	"flag"
 	"fmt"
 
-	"golang/go-zero/car/api/car/v1"
-	"golang/go-zero/car/internal/config"
-	carServer "golang/go-zero/car/internal/server/car"
-	"golang/go-zero/car/internal/svc"
+	v1 "gozero/car/api/car/v1"
+	"gozero/car/internal/config"
+	"gozero/car/internal/svc"
+
+	carServer "gozero/car/internal/server/car"
 
 	"github.com/zeromicro/go-zero/core/conf"
 	"github.com/zeromicro/go-zero/core/service"

@@ -6,9 +6,9 @@ package server
 import (
 	"context"
 
-	"golang/go-zero/car/api/car/v1"
-	"golang/go-zero/car/internal/logic/car"
-	"golang/go-zero/car/internal/svc"
+	"gozero/car/api/car/v1"
+	"gozero/car/internal/logic/car"
+	"gozero/car/internal/svc"
 )
 
 type CarServer struct {

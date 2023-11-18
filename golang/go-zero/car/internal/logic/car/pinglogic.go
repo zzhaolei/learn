@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"golang/go-zero/car/api/car/v1"
-	"golang/go-zero/car/internal/svc"
+	v1 "gozero/car/api/car/v1"
+	"gozero/car/internal/svc"
 
 	"github.com/zeromicro/go-zero/core/logx"
 )

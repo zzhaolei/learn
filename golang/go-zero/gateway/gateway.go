@@ -5,16 +5,17 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/zeromicro/go-zero/rest"
-	carV1 "golang/go-zero/gateway/api/car/v1"
-	userV1 "golang/go-zero/gateway/api/user/v1"
-	"golang/go-zero/gateway/docs"
-	"golang/go-zero/gateway/initialize"
+	carV1 "gozero/gateway/api/car/v1"
+	userV1 "gozero/gateway/api/user/v1"
+	"gozero/gateway/docs"
+	"gozero/gateway/initialize"
 
-	"golang/go-zero/gateway/internal/config"
-	carServer "golang/go-zero/gateway/internal/server/car"
-	userServer "golang/go-zero/gateway/internal/server/user"
-	"golang/go-zero/gateway/internal/svc"
+	"github.com/zeromicro/go-zero/rest"
+
+	"gozero/gateway/internal/config"
+	carServer "gozero/gateway/internal/server/car"
+	userServer "gozero/gateway/internal/server/user"
+	"gozero/gateway/internal/svc"
 
 	"github.com/zeromicro/go-zero/core/conf"
 	"github.com/zeromicro/go-zero/core/service"

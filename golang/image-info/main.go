@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"golang/image-info/config"
+	"image-info/config"
 
 	_ "image/gif"
 	_ "image/jpeg"

@@ -7,7 +7,7 @@
 package main
 
 import (
-	"golang/wire/internal/service"
+	"wire-demo/internal/service"
 )
 
 // Injectors from wire.go:
