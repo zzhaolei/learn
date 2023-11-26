@@ -1,23 +1,24 @@
 go 1.21.4
 
 use (
-	./interview
 	./asynq
-    ./coroutine
+	./coroutine
 	./demo
-    ./expired_lock
-    ./fx
+	./expired_lock
+	./fx
 	./go-zero
-    ./grpc
-    ./gui
+	./grpc
+	./gui
 	./hash-big-file
-    ./image-info
-    ./local-ip
-    ./mock
-    ./orm
-    ./pipeline-manager
-    ./prisma-go
-    ./rabbitmq
-    ./read-big-file-end-100
-    ./wire
+	./image-info
+	./interview
+	./local-ip
+	./mock
+	./orm
+	./pipeline-manager
+	./prisma-go
+	./rabbitmq
+	./read-big-file-end-100
+	./simple-user-web
+	./wire
 )
