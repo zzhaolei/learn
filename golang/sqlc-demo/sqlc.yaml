@@ -1,0 +1,32 @@
+version: "2"
+sql:
+  - engine: "mysql"
+    schema:
+      - "./model/author.sql"
+    queries:
+      - "./model/author_query.sql"
+    gen:
+      go:
+        package: "author"
+        out: "./model/mysql/author"
+        emit_json_tags: true
+        json_tags_case_style: "snake"
+        overrides:
+          - column: "author.config"
+            # nullable: true
+            go_type:
+              import: "sqlc-demo/model/dto"
+              package: "dto"
+              type: "AuthorConfig"
+              pointer: true
+          - column: "author.bio"
+            go_type:
+              type: "string"
+              pointer: true
+    # rules:
+    #   - sqlc/db-prepare
+    # database:
+    #   uri: mysql://{MYSQL_USER}:{MYSQL_PASSWORD}@{MYSQL_HOST}:{MYSQL_PORT}/{MYSQL_DATABASE}
+plugins: []
+rules: []
+options: {}
